@@ -1,11 +1,10 @@
 "use client";
 import { reviews } from "@/constants/data/reviews";
 import DesignAsset from "./DesignAsset";
-import styles from "./Reviews.module.css";
 
 function ReviewCard({ r }: { r: (typeof reviews)[number] }) {
   return (
-    <article className={`review-card ${styles.card}`}>
+    <article className="review-card">
       <div className="review-stars" aria-label="5 out of 5 stars on Google">
         <span className="google-mark" aria-label="Google">
           {[4, 5, 6, 7].map((n) => (
@@ -41,15 +40,15 @@ export default function Reviews() {
         Served more than <span>1 Lakh Orders</span>
       </h2>
       <div
-        className={`reviews-rail no-scrollbar ${styles.rail}`}
+        className="reviews-rail no-scrollbar"
         tabIndex={0}
         role="region"
         aria-label="Customer reviews; auto-scrolling, hover or focus to pause"
       >
-        <div className={`reviews-track ${styles.track}`}>
+        <div className="reviews-track">
           {[0, 1].map((copy) => (
             <div
-              className={`reviews-group ${styles.group}`}
+              className="reviews-group"
               key={copy}
               aria-hidden={copy === 1 ? true : undefined}
             >

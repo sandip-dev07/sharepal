@@ -10,7 +10,7 @@ export function useShop() {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [panel, setPanel] = useState<Panel>(null);
   const [selected, setSelected] = useState<Product | null>(null);
-  // No dates pre-selected — toolbar shows "Delivery Date / Pickup Date" + Select.
+  
   const [delivery, setDelivery] = useState("");
   const [pickup, setPickup] = useState("");
   const [draftDelivery, setDraftDelivery] = useState(delivery);
@@ -18,8 +18,7 @@ export function useShop() {
   const [notice, setNotice] = useState("");
   const [dateError, setDateError] = useState("");
 
-  const days =
-    delivery && pickup ? daysBetween(delivery, pickup) : RENTAL_DAYS;
+  const days = delivery && pickup ? daysBetween(delivery, pickup) : RENTAL_DAYS;
   const cartCount = cart.reduce((n, item) => n + item.quantity, 0);
 
   useEffect(() => {
@@ -62,7 +61,6 @@ export function useShop() {
     setPanel("dates");
   }
 
-  /** Validates + applies draft dates. Returns true when applied. */
   function applyDates() {
     if (
       !draftDelivery ||

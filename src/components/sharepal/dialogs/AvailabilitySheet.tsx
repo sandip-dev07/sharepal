@@ -31,7 +31,7 @@ export default function AvailabilitySheet({ shop }: { shop: UseShop }) {
         if (!o) shop.setPanel(null);
       }}
     >
-      <SheetContent side="bottom" className="avail-sheet" aria-label="Availability">
+      <SheetContent side="bottom" className="avail-sheet" aria-label="Availability" showCloseButton={false}>
         <span className="avail-grab" aria-hidden="true" />
         <button
           className="avail-close"
@@ -43,8 +43,9 @@ export default function AvailabilitySheet({ shop }: { shop: UseShop }) {
         {selected && (
           <>
             <SheetTitle className="avail-sheet-title">
-              Next Available from{" "}
-              {shop.pickup ? dateLabel(shop.pickup) : "soon"}
+              {shop.pickup
+                ? `Next Available from ${dateLabel(shop.pickup)}`
+                : "Next Available"}
             </SheetTitle>
             <SheetDescription className="sr-only">
               This item is unavailable for your dates. Similar products below.

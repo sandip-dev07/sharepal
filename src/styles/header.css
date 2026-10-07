@@ -86,6 +86,14 @@
   font-size: 14px;
   font-weight: 600;
 }
+.city-pin-white,
+.city-caret-white {
+  display: none;
+}
+.city-pin-dark,
+.city-caret-dark {
+  display: inline-flex;
+}
 .date-summary {
   display: flex;
   gap: 16px;
@@ -231,6 +239,41 @@
     height: 32px;
     font-size: 12px;
     border-radius: 999px;
+  }
+/* Mobile: violet pill with white text/icons (matches SharePal header) */
+.rental-toolbar {
+    border: 0;
+    background: transparent;
+    padding: 0;
+  }
+.city-button {
+    background: var(--color-sp-violet, #8a2be2);
+    color: white;
+    height: 36px;
+    padding: 0 14px;
+    font-weight: 500;
+  }
+.city-pin-dark,
+.city-caret-dark {
+    display: none;
+  }
+.city-pin-white,
+.city-caret-white {
+    display: inline-flex;
+  }
+.city-pin-white img,
+.city-caret-white img {
+    filter: brightness(0) invert(1);
+  }
+.header-actions .login-link > span {
+    width: 36px;
+    height: 36px;
+    background: var(--color-sp-violet, #8a2be2);
+    border: 2px solid white;
+    color: white;
+  }
+.header-actions .login-link > span img {
+    filter: brightness(0) invert(1);
   }
 .header-actions .header-icon {
     display: none;

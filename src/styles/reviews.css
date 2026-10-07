@@ -26,6 +26,10 @@
 .reviews-rail::-webkit-scrollbar {
   display: none;
 }
+.reviews-rail:focus-visible {
+  outline: 2px solid #1437ba;
+  outline-offset: 2px;
+}
 .reviews-track {
   display: flex;
   flex-direction: row;
@@ -58,7 +62,7 @@
 }
 .review-card {
   width: 360px;
-  flex-shrink: 0;
+  flex: 0 0 auto;
   padding: 16px;
   border: 1px solid var(--color-sp-line);
   border-radius: 24px;

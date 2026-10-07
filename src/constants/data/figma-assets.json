@@ -1,13 +1,40 @@
 {
-  "cart-minus": { "width": 16, "height": 16 },
-  "cart-plus": { "width": 16, "height": 16 },
-  "cart-trash": { "width": 20, "height": 20 },
-  "cart-delivery": { "width": 20, "height": 20 },
-  "cart-pickup": { "width": 20, "height": 20 },
-  "cart-edit": { "width": 16, "height": 16 },
-  "cart-coupon": { "width": 16, "height": 16 },
-  "cart-down": { "width": 16, "height": 16 },
-  "cart-close": { "width": 12, "height": 12 },
+  "cart-minus": {
+    "width": 16,
+    "height": 16
+  },
+  "cart-plus": {
+    "width": 16,
+    "height": 16
+  },
+  "cart-trash": {
+    "width": 20,
+    "height": 20
+  },
+  "cart-delivery": {
+    "width": 20,
+    "height": 20
+  },
+  "cart-pickup": {
+    "width": 20,
+    "height": 20
+  },
+  "cart-edit": {
+    "width": 16,
+    "height": 16
+  },
+  "cart-coupon": {
+    "width": 16,
+    "height": 16
+  },
+  "cart-down": {
+    "width": 16,
+    "height": 16
+  },
+  "cart-close": {
+    "width": 12,
+    "height": 12
+  },
   "footer-imgSvg": {
     "width": 16,
     "height": 16
@@ -143,5 +170,13 @@
   "header-imgSvgNoDescriptionAvailable5Dark": {
     "width": 24,
     "height": 24
+  },
+  "header-imgSvgNoDescriptionAvailableWhite": {
+    "width": 20,
+    "height": 24
+  },
+  "header-imgSvgNoDescriptionAvailable1White": {
+    "width": 16,
+    "height": 16
   }
 }

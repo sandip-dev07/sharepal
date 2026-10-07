@@ -19,7 +19,7 @@
 /.next/
 /out/
 /.agents
-/.figma-reference/
+/.figma-reference
 /.firecrawl/
 
 # production

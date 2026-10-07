@@ -79,9 +79,19 @@ export default function Header({
         </Link>
         <div className="rental-toolbar">
           <button className="city-button" onClick={onCity}>
-            <DesignAsset name="header-imgSvgNoDescriptionAvailable" />
+            <span className="city-pin-dark">
+              <DesignAsset name="header-imgSvgNoDescriptionAvailable" />
+            </span>
+            <span className="city-pin-white">
+              <DesignAsset name="header-imgSvgNoDescriptionAvailableWhite" />
+            </span>
             Bangalore
-            <DesignAsset name="header-imgSvgNoDescriptionAvailable1" />
+            <span className="city-caret-dark">
+              <DesignAsset name="header-imgSvgNoDescriptionAvailable1" />
+            </span>
+            <span className="city-caret-white">
+              <DesignAsset name="header-imgSvgNoDescriptionAvailable1White" />
+            </span>
           </button>
           <button className="date-summary" onClick={onDates}>
             <span>
@@ -110,7 +120,10 @@ export default function Header({
             </span>
           </button>
           <button className="edit-dates" onClick={onDates}>
-            <DesignAsset name="header-imgSvgNoDescriptionAvailable4" className="size-[14px]" />
+            <DesignAsset
+              name="header-imgSvgNoDescriptionAvailable4"
+              className="size-[14px]"
+            />
             {delivery && pickup ? "Edit" : "Select"}
           </button>
         </div>
