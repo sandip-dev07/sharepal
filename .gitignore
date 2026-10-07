@@ -12,10 +12,15 @@
 
 # testing
 /coverage
+/test-results/
+/playwright-report/
 
 # next.js
 /.next/
 /out/
+/.agents
+/.figma-reference/
+/.firecrawl/
 
 # production
 /build

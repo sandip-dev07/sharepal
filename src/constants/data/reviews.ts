@@ -1,0 +1,80 @@
+export const reviews = [
+  {
+    name: "Satyaki",
+    meta: "Kolkata • Trekking Gear",
+    initials: "SB",
+    text: "I would recommend SharePal for anybody looking to rent trekking gears, on time delivery, condition of products delivered were very good, super transparent deposit return policy.",
+  },
+  {
+    name: "Afrana",
+    meta: "Bangalore • Gaming Console",
+    initials: "AS",
+    text: "Have used their services twice now. They never disappoint. Quick responses, polite, transparent, hassle free, great products as well. Rented trekking gear and PS4.",
+  },
+  {
+    name: "Kanthikiran",
+    meta: "Bangalore • Riding Gear",
+    initials: "KK",
+    text: "It's an amazing service, starting from the quality of the gear provided to the pickup and drop at doorstep facility. The staff is extremely helpful and supportive.",
+  },
+  {
+    name: "Amal",
+    meta: "Bangalore • Gaming Console",
+    initials: "AA",
+    text: "I am a regular customer and order ps4. It's very affordable and booking an order is super easy and user friendly website and polite staff.",
+  },
+  {
+    name: "Pankaj",
+    meta: "Mumbai • Action Cameras",
+    initials: "PS",
+    text: "The experience with share pal is awesome. The camera, service provide by them is good. Overall I am Happy by renting camera gear from share pal.",
+  },
+  {
+    name: "Rakesh",
+    meta: "Mumbai • Trekking Gear",
+    initials: "RS",
+    text: "Ordered 2 pair of shoes & 3 trekking poles. Shoes were in mint condition, very well cleaned and sanitized. Delivery and pick-up was smooth.",
+  },
+  {
+    name: "Priya",
+    meta: "Bangalore • Photography",
+    initials: "PS",
+    text: "Rented a Sony A7III for a weekend shoot. Camera was in perfect condition, battery fully charged, and doorstep pickup saved me so much time.",
+  },
+  {
+    name: "Rohan",
+    meta: "Delhi • Gaming Console",
+    initials: "RM",
+    text: "Booked a PS5 for a friends get-together. Super easy booking, on-time delivery, and the console worked flawlessly with two controllers included.",
+  },
+  {
+    name: "Sneha",
+    meta: "Pune • Camping Gear",
+    initials: "SK",
+    text: "Took tents and sleeping bags for a Coorg trip. Clean, sturdy gear and the support team even helped me pick the right size tent on call.",
+  },
+  {
+    name: "Arjun",
+    meta: "Hyderabad • Action Cameras",
+    initials: "AM",
+    text: "GoPro rental was seamless. Great pricing, quick deposit refund, and the mounts kit had everything I needed for my bike trip vlog.",
+  },
+  {
+    name: "Divya",
+    meta: "Chennai • Projector",
+    initials: "DN",
+    text: "Rented a projector for a movie night. Picture quality was excellent, setup took 5 minutes, and pickup next day was right on schedule.",
+  },
+  {
+    name: "Karan",
+    meta: "Mumbai • Cycling Gear",
+    initials: "KJ",
+    text: "Third time renting cycles from SharePal. Well-maintained bikes, helmets included, and transparent pricing with no hidden charges at all.",
+  },
+  {
+    name: "Meera",
+    meta: "Bangalore • Trekking Gear",
+    initials: "MI",
+    text: "Jackets and backpacks arrived a day early, neatly packed. Perfect for first-time trekkers — quality gear at a fraction of buying cost.",
+  },
+];

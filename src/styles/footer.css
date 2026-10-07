@@ -1,0 +1,232 @@
+.seo-section,
+.site-footer {
+  color: var(--color-sp-faint);
+  background: var(--color-sp-navy);
+}
+.footer-container {
+  width: min(1184px, calc(100% - 80px));
+  margin-inline: auto;
+}
+.seo-section {
+  padding-top: 72px;
+}
+.seo-groups {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 56px 40px;
+}
+.seo-groups h2 {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 20px;
+  color: white;
+}
+.seo-groups ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.seo-groups a:hover,
+.footer-columns a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.seo-description {
+  margin-top: 68px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+.seo-description h3 {
+  margin-bottom: 8px;
+  color: white;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.seo-description p + h3 {
+  margin-top: 32px;
+}
+.seo-description summary {
+  cursor: pointer;
+  color: white;
+  font-size: 12px;
+  margin-top: 16px;
+}
+.seo-description summary {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  list-style: none;
+}
+.seo-description summary::-webkit-details-marker {
+  display: none;
+}
+.seo-description details p {
+  padding-top: 16px;
+}
+.site-footer {
+  padding-top: 48px;
+  padding-bottom: 40px;
+}
+.footer-brand {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, transparent, #002cd122);
+}
+.footer-brand a {
+  display: flex;
+  align-items: center;
+}
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 32px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer-columns h2 {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: white;
+}
+.footer-columns li {
+  margin-bottom: 24px;
+}
+.footer-new {
+  margin-left: 4px;
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 24px;
+  background: var(--color-sp-lime);
+  color: var(--color-sp-navy);
+  font-size: 10px;
+  line-height: 20px;
+}
+.footer-support a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+.footer-social a {
+  display: grid;
+  place-items: center;
+  width: 33px;
+  height: 32px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-top: 24px;
+  margin-top: 24px;
+  border-top: 1px solid #1945e844;
+  color: #88a0ff;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer-bottom a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.mobile-nav {
+  display: none;
+}
+@media (max-width: 1023px) {
+.footer-container {
+    width: calc(100% - 48px);
+  }
+.seo-groups {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+.footer-columns {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+.footer-bottom {
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+.site-footer {
+    padding-bottom: 110px;
+  }
+.mobile-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: fixed;
+    bottom: 0;
+    inset-inline: 0;
+    z-index: 50;
+    padding: 10px 8px max(10px, env(safe-area-inset-bottom));
+    background: white;
+    border-top: 1px solid var(--color-sp-line);
+    box-shadow: 0 -4px 16px #00000005;
+  }
+.mobile-nav > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+  }
+.mobile-nav svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 639px) {
+.footer-container {
+    width: calc(100% - 40px);
+  }
+.seo-section {
+    padding-top: 40px;
+  }
+.seo-groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 20px;
+  }
+.seo-groups h2 {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 12px;
+  }
+.seo-groups ul {
+    font-size: 12px;
+    gap: 12px;
+  }
+.seo-description {
+    margin-top: 36px;
+    font-size: 12px;
+  }
+.footer-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    font-size: 12px;
+    gap: 24px;
+  }
+.footer-columns h2 {
+    margin-bottom: 20px;
+  }
+.footer-columns li {
+    margin-bottom: 16px;
+  }
+.footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

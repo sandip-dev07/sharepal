@@ -1,0 +1,115 @@
+.faq-section {
+  margin-top: 160px;
+  border-radius: 24px;
+  background: white;
+  padding: 48px 40px 64px;
+}
+.faq-section h2 {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.faq-trigger {
+  min-height: 56px;
+  padding: 16px;
+  align-items: center;
+  border-radius: 12px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  transition: background-color 0.2s ease;
+}
+.faq-trigger:hover,
+.faq-trigger:focus-visible,
+.faq-trigger[aria-expanded="true"] {
+  background-color: #f2f3f4;
+}
+.faq-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: 0;
+  border-radius: 24px;
+  background: var(--color-sp-bg);
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+.faq-more:hover {
+  background: var(--color-sp-line);
+}
+.faq-trigger > [data-slot="accordion-trigger-icon"] {
+  display: none;
+}
+.faq-section [data-slot="accordion-item"] {
+  border: 0;
+}
+.faq-chevron {
+  margin-left: auto;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.faq-trigger[aria-expanded="true"] .faq-chevron {
+  transform: rotate(180deg);
+}
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 64px 16px 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.breadcrumbs a {
+  color: var(--color-sp-gray);
+}
+@media (max-width: 1023px) {
+.faq-section {
+    margin-top: 80px;
+    padding: 32px 24px;
+  }
+.faq-section h2 {
+    font-size: 22px;
+  }
+.faq-trigger {
+    font-size: 14px;
+  }
+}
+@media (max-width: 639px) {
+  .faq-section {
+    margin-top: 80px;
+    padding: 68px 32px 56px;
+    border-radius: 24px;
+  }
+  .faq-section h2 {
+    padding-block: 8px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .faq-trigger {
+    min-height: 52px;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    gap: 4px;
+    overflow-wrap: anywhere;
+  }
+  .faq-more {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  .breadcrumbs {
+    padding: 40px 16px 0;
+    margin: 12px 16px;
+    font-size: 12px;
+    line-height: 16px;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+}

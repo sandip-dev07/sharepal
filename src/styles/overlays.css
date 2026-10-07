@@ -1,0 +1,331 @@
+.cart-notice {
+  position: fixed;
+  z-index: 60;
+  top: 12px;  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: max-content;
+  max-width: calc(100vw - 32px);
+  padding: 16px 20px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sp-lift);
+  background: var(--color-sp-navy);
+  color: white;
+  font-size: 13px;
+  animation: notice-in 0.25s ease;
+}
+@keyframes notice-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -8px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+.cart-notice button {
+  white-space: nowrap;
+  color: var(--color-sp-lime);
+  font-weight: 600;
+}
+.sharepal-dialog {
+  z-index: 80 !important;
+  max-height: 90dvh;
+  overflow-y: auto;
+  padding: 28px !important;
+  border-radius: 24px !important;
+}
+.shop-dialog-heading,
+.availability-dialog-head,
+.availability-dialog-body {
+  display: contents;
+}
+.sharepal-dialog [data-slot="dialog-title"] {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  padding-right: 20px;
+}
+.dialog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+}
+.dialog-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.dialog-form input {
+  height: 44px;
+  padding-inline: 12px;
+  background: white;
+}
+.primary-action {
+  height: 44px;
+  width: 100%;
+  border-radius: 24px;
+  background: var(--color-sp-blue);
+  color: white;
+}
+.primary-action:hover {
+  background: var(--color-sp-deepblue);
+}
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-sp-gray);
+}
+.empty-cart h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-sp-navy);
+}
+.cart-body .empty-cart {
+  margin: auto 0;
+}
+.sharepal-dialog-wide {
+  max-width: 800px !important;
+  width: calc(100vw - 32px) !important;
+  background: #f3f5f6 !important;
+  border: 1px solid #e2e8f0 !important;
+}
+.sharepal-dialog-wide [data-slot="dialog-title"] {
+  font-size: 20px !important;
+  line-height: 28px !important;
+  font-weight: 700 !important;
+  color: #101010 !important;
+}
+.sharepal-dialog-wide [data-slot="dialog-description"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.avail-grid {
+  display: grid;
+  grid-template-columns: 256px minmax(0, 1fr);
+  gap: 16px;
+  margin-top: 12px;
+  text-align: left;
+}
+.avail-main {
+  padding: 16px;
+  border-radius: 16px;
+  background: #fafafa;
+}
+.avail-photo {
+  display: grid;
+  place-items: center;
+  min-height: 224px;
+  border-radius: 12px;
+  background: #fafafa;
+}
+.avail-photo-img {
+  width: 100%;
+  height: 224px;
+  object-fit: contain;
+}
+.avail-main h3 {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #090a0b;
+}
+.avail-booked {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+  color: #0a7234;
+  font-size: 12px;
+  font-weight: 500;
+}
+.avail-change {
+  width: 100%;
+  height: 40px;
+  margin-top: 12px;
+  border-radius: 9999px !important;
+  border-color: #030d31 !important;
+  color: #020817 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+.avail-side h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #090a0b;
+  margin-bottom: 12px;
+}
+.avail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.avail-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 16px;
+  background: white;
+}
+.avail-thumb {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #fafafa;
+}
+.avail-meta {
+  flex: 1;
+  min-width: 0;
+}
+.avail-meta strong {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #090a0b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.avail-meta span {
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #4a4e5a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.avail-price {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #090a0b;
+  white-space: nowrap;
+}
+.avail-add {
+  flex-shrink: 0;
+  height: 36px;
+  padding: 8px 16px !important;
+  border-radius: 9999px !important;
+  border-color: #090a0b !important;
+  background: #fafafa !important;
+  color: #090a0b !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+@media (max-width: 639px) {
+.avail-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+.avail-list {
+    max-height: none;
+    overflow: visible;
+  }
+}
+@media (max-width: 1023px) {
+.cart-notice {
+    top: max(12px, env(safe-area-inset-top));
+  }
+}
+@media (max-width: 639px) {
+.cart-notice {
+    padding: 12px;
+    font-size: 11px;
+    gap: 8px;
+  }
+.cart-notice > svg {
+    display: none;
+  }
+.sharepal-dialog {
+    max-width: calc(100vw - 24px) !important;
+    padding: 22px !important;
+  }
+  .availability-dialog.sharepal-dialog-wide {
+    inset: auto 0 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100% !important;
+    max-width: none !important;
+    height: calc(100dvh - 40px);
+    max-height: calc(100dvh - max(16px, env(safe-area-inset-top)));
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 16px 16px 0 0 !important;
+    border-bottom: 0 !important;
+    overflow: hidden;
+    translate: 0 0 !important;
+    transform: none !important;
+    animation: none;
+    transition: translate 300ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .availability-dialog[data-starting-style],
+  .availability-dialog[data-ending-style] {
+    translate: 0 100% !important;
+  }
+  .availability-dialog-head {
+    position: relative;
+    display: block;
+    flex-shrink: 0;
+    padding: 28px 16px 16px;
+    border-bottom: 1px solid #e2e7ea;
+    background: white;
+  }
+  .availability-dialog-head::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: calc(50% - 28px);
+    width: 56px;
+    height: 4px;
+    border-radius: 999px;
+    background: #f0f3f7;
+  }
+  .availability-dialog-head [data-slot="dialog-title"] {
+    padding-right: 36px;
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+  .availability-dialog > [data-slot="dialog-close"] {
+    top: 24px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+  }
+  .availability-dialog-body {
+    display: block;
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    padding: 16px 16px max(16px, env(safe-area-inset-bottom));
+  }
+  .availability-dialog .avail-grid {
+    margin-top: 0;
+  }
+}

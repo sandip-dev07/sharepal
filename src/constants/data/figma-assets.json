@@ -1,0 +1,147 @@
+{
+  "cart-minus": { "width": 16, "height": 16 },
+  "cart-plus": { "width": 16, "height": 16 },
+  "cart-trash": { "width": 20, "height": 20 },
+  "cart-delivery": { "width": 20, "height": 20 },
+  "cart-pickup": { "width": 20, "height": 20 },
+  "cart-edit": { "width": 16, "height": 16 },
+  "cart-coupon": { "width": 16, "height": 16 },
+  "cart-down": { "width": 16, "height": 16 },
+  "cart-close": { "width": 12, "height": 12 },
+  "footer-imgSvg": {
+    "width": 16,
+    "height": 16
+  },
+  "footer-imgSvg1": {
+    "width": 96,
+    "height": 36
+  },
+  "footer-imgSvg2": {
+    "width": 51,
+    "height": 27
+  },
+  "footer-imgSvg3": {
+    "width": 16,
+    "height": 16
+  },
+  "footer-imgSvg4": {
+    "width": 25,
+    "height": 24
+  },
+  "footer-imgSvg5": {
+    "width": 24,
+    "height": 24
+  },
+  "footer-imgVector": {
+    "width": 24,
+    "height": 24
+  },
+  "footer-imgVector1": {
+    "width": 24,
+    "height": 24
+  },
+  "footer-imgVector2": {
+    "width": 24,
+    "height": 24
+  },
+  "header-imgSvg": {
+    "width": 86,
+    "height": 27
+  },
+  "header-imgSvg1": {
+    "width": 51,
+    "height": 27
+  },
+  "header-imgSvgNoDescriptionAvailable": {
+    "width": 20,
+    "height": 24
+  },
+  "header-imgSvgNoDescriptionAvailable1": {
+    "width": 16,
+    "height": 16
+  },
+  "header-imgSvgNoDescriptionAvailable2": {
+    "width": 16,
+    "height": 16
+  },
+  "header-imgSvgNoDescriptionAvailable3": {
+    "width": 16,
+    "height": 16
+  },
+  "header-imgSvgNoDescriptionAvailable4": {
+    "width": 16,
+    "height": 16
+  },
+  "header-imgSvgNoDescriptionAvailable5": {
+    "width": 24,
+    "height": 24
+  },
+  "header-imgVector": {
+    "width": 20.405,
+    "height": 20.405
+  },
+  "header-imgVector1": {
+    "width": 23.3333,
+    "height": 23.3333
+  },
+  "imgSvg": {
+    "width": 50.23,
+    "height": 27.0027
+  },
+  "imgSvg1": {
+    "width": 29.77,
+    "height": 26.9955
+  },
+  "imgSvg2": {
+    "width": 17.61,
+    "height": 23.9966
+  },
+  "imgSvg3": {
+    "width": 16,
+    "height": 16
+  },
+  "imgSvg4": {
+    "width": 14,
+    "height": 14
+  },
+  "imgSvgNoDescriptionAvailable": {
+    "width": 24,
+    "height": 24
+  },
+  "imgVector": {
+    "width": 96,
+    "height": 30.4762
+  },
+  "imgVector4": {
+    "width": 10.56,
+    "height": 10.34
+  },
+  "imgVector5": {
+    "width": 17.1,
+    "height": 8.9
+  },
+  "imgVector6": {
+    "width": 4.84,
+    "height": 9.86
+  },
+  "imgVector7": {
+    "width": 17.18,
+    "height": 8.91
+  },
+  "imgVector8": {
+    "width": 18.687,
+    "height": 17.438
+  },
+  "header-imgVectorWhite": {
+    "width": 20.405,
+    "height": 20.405
+  },
+  "header-imgVector1White": {
+    "width": 23.3333,
+    "height": 23.3333
+  },
+  "header-imgSvgNoDescriptionAvailable5Dark": {
+    "width": 24,
+    "height": 24
+  }
+}

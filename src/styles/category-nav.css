@@ -1,0 +1,111 @@
+.category-nav {
+  position: sticky;
+  top: 80px;
+  z-index: 40;
+  display: flex;
+  align-items: stretch;
+  height: 48px;
+  background: var(--color-sp-bg, #f4f6f7);
+  background-color: #f4f6f7;
+  transition: top 0.3s ease;
+}
+body.header-hidden .category-nav {
+  top: 0;
+}
+.category-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex: 1;
+  min-width: 0;
+  max-width: 704px;
+  margin: auto;
+  height: 48px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.category-tabs::-webkit-scrollbar {
+  display: none;
+}
+.cat-arrow {
+  display: none;
+  flex-shrink: 0;
+  align-self: center;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  color: var(--color-sp-gray);
+}
+.category-nav a {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-width: 144px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-sp-body);
+  white-space: nowrap;
+}
+.category-nav a:hover {
+  color: var(--color-sp-violet);
+}
+.category-nav a[aria-current] {
+  font-weight: 700;
+}
+.category-nav a[aria-current]::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  height: 2px;
+  width: 120px;
+  border-radius: 20px;
+  background: var(--color-sp-violet);
+}
+@media (max-width: 1023px) {
+.category-nav {
+    top: 122px;
+  }
+body.header-hidden .category-nav {
+    top: 0;
+  }
+.cat-arrow {
+    display: grid;
+  }
+}
+@media (max-width: 639px) {
+  .category-nav {
+    padding-inline: 4px;
+    background: #4c187c;
+  }
+  .category-tabs {
+    height: 40px;
+    justify-content: flex-start;
+    position: relative;
+  }
+  .category-nav a {
+    min-width: 141.84px;
+    flex: 0 0 141.84px;
+    padding-inline: 8px 18px;
+    color: #e3e3e3;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .category-nav a:hover {
+    color: white;
+  }
+  .category-nav a[aria-current]::after {
+    width: 115.84px;
+    bottom: 0;
+    left: 8px;
+  }
+  .cat-arrow {
+    width: 28px;
+    height: 28px;
+    color: #a782bc;
+  }
+  .cat-arrow svg {
+    width: 16px;
+    height: 16px;
+  }
+}
